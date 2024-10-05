@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2 {
-    color: lavenderblush;
+    color:darkblue;
 }
 
 h1 {
@@ -16,12 +16,12 @@ h2 {
 }
 
   p, ul, td, th {
-    color: lavenderblush;
+    color: deepskyblue;
 }
 .evenrow {
     background-color: lightskyblue;  
 }
-.special {color: black (106, 195, 218);}
+
 
 
 

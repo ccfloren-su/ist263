@@ -16,10 +16,10 @@ h2 {
 }
 
   p, ul, ol, td, th {
-    color: deepskyblue;
+    color: darkolivegreen;
 }
 .evenrow {
-    background-color: lightskyblue;  
+    background-color: lightsteelblue;  
     color:black;
 }
 

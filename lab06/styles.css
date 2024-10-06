@@ -15,11 +15,12 @@ h2 {
     font-size: 1.875em; 
 }
 
-  p, ul, td, th {
+  p, ul, ol, td, th {
     color: deepskyblue;
 }
 .evenrow {
     background-color: lightskyblue;  
+    color:black;
 }
 
 

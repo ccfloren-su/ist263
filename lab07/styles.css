@@ -7,8 +7,9 @@ body {
   h1, h2, p, ul, ol, td, th {
     color: #0c457d;
 }
-a:visited {color:#6bd2db)}
-a:hover{background-color:#e8702a);}
+a:visited {color:#6bd2db;}
+a:hover{background-color:#e8702a;}
+a:{color:#6bd2db;}
 nav{background-color:#0ea7b5}
 nav a {color: #0c457d;}
 nav a:hover{background-color: 	#ffbe4f;

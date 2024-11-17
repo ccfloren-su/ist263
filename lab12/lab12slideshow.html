@@ -25,8 +25,15 @@
          /* ^^ margin auto is centering this container */
          #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb 
          {width: 100px;}
-
-         
+         .hide{
+            display:;
+         }
+         #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune{
+            display:none;
+         }
+         #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo{
+            display:none;
+         }
      </style>
      <script>
         function PlanetsOff(){
@@ -84,8 +91,7 @@
  <body data-new-gr-c-s-check-loaded="14.1207.0" data-gr-ext-installed="">
  <div id="slideshow-container">
      <div id="bigimages">
-         <img src="./Lab 12 Slideshow_files/mecury.jpg" onclick="PlanetsOff(); MercuryOn();" alt="mercury" id="mercury">
-         <div class="hide">
+        <img src="./Lab 12 Slideshow_files/mecury.jpg" onclick="PlanetsOff(); MercuryOn();" alt="mercury" id="mercury">
         <img src="./Lab 12 Slideshow_files/venus.jpg" onclick="PlanetsOff(); VenusOn();" alt="venus" id="venus">
         <img src="./Lab 12 Slideshow_files/earth.jpg" onclick="PlanetsOff(); EarthOn();" alt="earth" id="earth">
         <img src="./Lab 12 Slideshow_files/mars.jpg" onclick="PlanetsOff(); MarsOn();" alt="mars" id="mars">
@@ -93,7 +99,6 @@
         <img src="./Lab 12 Slideshow_files/saturn.jpg" onclick="PlanetsOff(); SaturnOn();" alt="saturn" id="saturn">
         <img src="./Lab 12 Slideshow_files/uranus.jpg" onclick="PlanetsOff(); UranusOn();" alt="uranus" id="uranus">
         <img src="./Lab 12 Slideshow_files/neptune.jpg" onclick="PlanetsOff(); NeptuneOn();" alt="neptune" id="neptune">
-        </div>
      </div>
      <div id="planetinfo">        
          <h1>Planets Slideshow</h1>
@@ -101,7 +106,6 @@
              <h2>Mercury</h2>
              <p>Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets in the Solar System. It is named after the Greek god Hermes (Ερμής), translated into Latin Mercurius Mercury, god of commerce, messenger of the gods, mediator between gods and mortals.</p>
          </div>
-         <div class="hide">
          <div id="venusinfo">
              <h2>Venus</h2>
              <p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the second-brightest natural object in the night sky after the Moon, Venus can cast shadows and can be, on rare occasion, visible to the naked eye in broad daylight. Venus lies within Earth's orbit, and so never appears to venture far from the Sun, either setting in the west just after dusk or rising in the east a bit before dawn. Venus orbits the Sun every 224.7 Earth days. </p>
@@ -129,7 +133,6 @@
          <div id="neptuneinfo">
              <h2>Neptune</h2>
              <p>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, slightly more massive than its near-twin Uranus.</p>
-         </div>
         </div>
      </div>
      <div id="thumbnails">

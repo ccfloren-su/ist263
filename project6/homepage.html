@@ -12,107 +12,112 @@
             }
             h1{
                 background-color:#f9e5f0;
-                padding:2em;
+                padding:5%;
                 margin:auto;
                 text-align:center;
                 text-size-adjust: 3em;
             }
             nav{background-color:#e3f0d7;
-                padding:10px;
+                padding:1.5%;
                 margin-bottom:30px;
                 text-align:center;
             }
-            
+            @media only screen and (max-width: 768px) {
+                h1 {
+                padding: 5% 0; }
+                .cheesedesc,.flandesc{
+                    padding:1%;
+                }
+                }
+
             img {max-width:100%; display: block;
                         margin-left: auto;
                         margin-right: auto; }
             footer{
                 background-color: #e7ccdb;
                 font-family:font-family: 'Times New Roman', serif;
-    display: flex;
-     /* Pushes items to the far edges */
-    padding: 50px;
-}
+                display: flex;
+                padding: 50px;
+            }
 
-.aboutfooter {
-    margin: 0; /* Removes default margin for precise alignment */
-    float:left;
-    flex:auto;
-}
+            .aboutfooter {
+                margin: 0; 
+                flex:auto;
+            }
 
-.aboutus {
-    text-align: right; /* Ensures text inside the div aligns to the right */
-    flex: 1; /* Optional: allows this section to take remaining space */
-}
-    
+            .aboutus {
+                text-align: right; 
+                flex: 1; 
+            }
+                
 
-.dropbtn {
-  background-color: #e3f0d7;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+            .dropbtn {
+            background-color: #e3f0d7;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+            .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
 
-.dropdown:hover .dropbtn {
-  background-color: #E7CCCC;
-}
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
+            .dropdown:hover .dropbtn {
+            background-color: #E7CCCC;
+            }
+            .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            }
+            .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            }
 
-.recipesintro{
-    display:flex;
-    clear: both;
-    padding:20px;
-    margin-bottom: 10%;
-    text-align:center;
-}
-.cheesedesc{
-    flex:1; order:1; background-color: #f9e5f0; border-radius: 1em;
-    font-size: 90%;
-    margin: 2em;
-    padding:4em;
-}
-.flandesc{
-    flex:1; order:2; background-color: #f9e5f0; border-radius: 1em; padding:4em;margin:3em;
-    font-size: 90%;
-}
+            .recipesintro{
+                display:flex;
+                clear: both;
+                padding:20px;
+                margin-bottom: 10%;
+                text-align:center;
+            }
+            .cheesedesc{
+                flex:1; order:1; background-color: #f9e5f0; border-radius: 1em;
+                font-size: 90%;
+                margin: 2em;
+                padding:4em;
+            }
+            .flandesc{
+                flex:1; order:2; background-color: #f9e5f0; border-radius: 1em; padding:4em;margin:3em;
+                font-size: 90%;
+            }
 
 
         </style>

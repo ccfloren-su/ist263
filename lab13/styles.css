@@ -24,7 +24,7 @@ nav span{
   display: inline;
 }
 nav{background-color:#0ea7b5;
-  color:#0c457d;
+  color:#ffffff;
   padding:10px;
   margin-bottom:30px;
   border:2px#0c457d;
@@ -32,7 +32,7 @@ nav{background-color:#0ea7b5;
 }
 
 nav a {
-  color: #0c457d;
+  color: #ffffff;
   width: 100%;}
 
        
@@ -61,7 +61,7 @@ nav a:hover{background-color: #e8702a;}
 
 table, th, td, tr {
   font-weight:bold;
-  color:#0c457d
+  color:#ffffff
   border: 1px solid black;} 
 
 tr.evenrow{background-color: #0ea7b5;}

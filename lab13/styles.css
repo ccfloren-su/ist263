@@ -28,6 +28,7 @@ nav{background-color:#0ea7b5;
   padding:10px;
   margin-bottom:30px;
   border:2px#0c457d;
+  font-weight:bold;
 }
 
 nav a {
@@ -59,6 +60,7 @@ nav a:hover{background-color: #e8702a;}
 
 
 table, th, td, tr {
+  font-weight:bold;
   color:#0c457d
   border: 1px solid black;} 
 

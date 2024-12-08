@@ -9,6 +9,7 @@
             body{
                 font-family:"PT Serif", serif;
                 background-color: #f8f6f2;
+                font:50%;
             }
             h1{
                 background-color:#f9e5f0;
@@ -18,16 +19,9 @@
             }
             nav{background-color:#e3f0d7;
                 padding:1.5%;
-                margin-bottom:30px;
+                margin-bottom:1%;
                 text-align:center;
             }
-            @media only screen and (max-width: 768px) {
-                h1 {
-                padding: 5% 0; }
-                .cheesedesc,.flandesc{
-                    padding:1%;
-                }
-                }
 
             img {max-width:100%; display: block;
                         margin-left: auto;
@@ -117,8 +111,33 @@
                 flex:1; order:2; background-color: #f9e5f0; border-radius: 1em; padding:4em;margin:3em;
                 font-size: 90%;
             }
-
-
+            @media only screen and (max-width: 600px) {
+               
+                body {
+                font-size: 14px; /* Slightly smaller font size for mobile */
+                line-height: 1.5;
+            }
+            h1 {
+                padding: 10px;
+            }
+            nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+            footer {
+                flex-direction: column; /* Stack footer content vertically */
+                padding: 10px;
+            }
+            .recipesintro {
+                flex-direction: column; /* Stack items vertically */
+                margin-bottom: 5%;
+            }
+            .cheesedesc,
+            .flandesc {
+                flex: 1 1 100%; /* Full width on small screens */
+                margin: 0.5em 0;
+            }
+        }
         </style>
         <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     </head>

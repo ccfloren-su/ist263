@@ -1,0 +1,95 @@
+
+body{
+    font-family:"PT Serif", serif;
+    background-color: #f8f6f2;
+}
+h1{
+    padding: 2%;
+    margin:auto;
+    text-align:center;
+    border: 1% #b0aca4;
+    font-size:3em;
+    background-color: #f9e5f0;
+}
+nav{
+    background-color: #ddbecf;
+    padding:.2%;
+    margin-bottom:1%;
+    text-align:center;
+    font-weight:bold;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+a{color:rgb(85, 17, 51);
+text-decoration:none;
+}
+a:visited {color:rgb(85, 17, 51);}
+
+nav a {
+color: rgb(85, 17, 51);
+width: 100%;
+margin:50px;
+}
+
+
+nav a:hover{background-color: #f2abd1;}
+img {max-width:100%; display: block;
+    width: 300px;
+            margin-left: auto;
+            margin-right: auto; }
+
+
+footer{
+    background-color: #e7ccdb;
+    font-family:'Times New Roman', serif;
+    display: flex;
+    padding: 40px;
+}
+
+.aboutfooter {
+    margin: 0; 
+    flex:auto;
+}
+
+.aboutus {
+    margin-left:10%;
+    padding: 0;
+    text-align: right; 
+    flex: 1; 
+}
+    
+@media only screen and (max-width: 600px) {
+    nav a {
+color: rgb(85, 17, 51);
+width: 100%;
+margin:1%;
+}
+    body {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    line-height: 1.5;
+}
+h1 {
+    padding: 10px;
+}
+nav {
+    gap:1%;
+    flex-direction: column;
+    padding: 10px;
+}
+footer {
+    flex-direction: column; /* Stack footer content vertically */
+    padding: 10px;
+}
+.box {
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 5%;
+}
+.intro, .description,
+.ingredients {
+    max-width:100%;
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 0.5em 0;
+}
+}

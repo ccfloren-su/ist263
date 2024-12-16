@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homepage</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <style> 
+            .titleflan{
+                background-color: #f8f6f2;
+                text-align:left;
+            }
+            .intro{
+                border-radius: 1em;
+                border:#c0a4b3 solid;
+                padding: 2em;
+    margin: 50px auto; 
+                display:block;
+                max-width:70%;
+            }
+            .pintro{
+                padding: 70px 0;
+                text-align:center;
+            }
+            .flan2{
+                float:left;
+                padding: 15px;
+                max-height: 400px;
+                max-width:400px;
+               
+            }
+            
+            
+            .aboutus{
+                float:bottom;
+            }
+            .instructionbox{
+                margin-top: 10%;
+                text-align: center;
+                flex:1; order:1; background-color: #f9e5f0; border-radius: .5em;
+                font-size: 90%;
+                margin: 50px auto; 
+                max-width: 90%;
+
+            }
+            p div{flex:1;
+                 justify-content: space-between;}
+            .prep{
+                padding-top: 5%;
+            }
+            .preptime{
+                color:rgb(85, 17, 51);
+                display:flex;
+                border:black;
+                justify-content:space-around;
+                text-align: center;
+                font-size: larger;
+                font-weight: bold;
+               
+            }
+            .time{
+                display:flex;
+                justify-content:space-around;
+                text-align: center;
+            }
+            h2{
+                text-align:center;
+
+            }
+            ul{
+                text-align: left;
+            }
+            .batter2{
+                max-height:350px;
+            }
+            .box{
+                flex-direction:row-reverse;
+                display:flex;
+                gap: 30px;
+                margin:30px
+            }
+            .directions{
+                flex: 1; /* Make both descriptions take up equal space */
+    background-color: #f3d1e3;
+    border-radius: 1em;
+    border-right:solid #c0a4b3;
+    padding: 2em;
+    margin: 10px auto; /* Remove excess margins to keep layout clean */
+    font-size: 90%;
+    box-shadow: 5px 5px 10px #e3e3e3; /* Optional: Add a shadow for style */
+    box-sizing: border-box;
+    flex-direction:row-reverse;
+    text-align:left;
+            }
+            .ingredients{
+                flex: 1; /* Make both descriptions take up equal space */
+    background-color: #f3d1e3;
+    border-radius: 1em;
+    border-right:solid #c0a4b3;
+    padding: 2em;
+    margin: 10px auto; /* Remove excess margins to keep layout clean */
+    font-size: 90%;
+    box-shadow: 5px 5px 10px #e3e3e3; /* Optional: Add a shadow for style */
+    box-sizing: border-box;
+    flex-direction:row-reverse;
+            }
+            @media only screen and (max-width: 600px) {
+    nav a {
+color: rgb(85, 17, 51);
+width: 100%;
+margin:1%;
+}
+    body {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    line-height: 1.5;
+}
+h1 {
+    font-size:40px;
+    padding: 10px;
+}
+nav {
+    gap:1%;
+    flex-direction: column;
+    padding: 10px;
+}
+footer {
+    flex-direction: column; /* Stack footer content vertically */
+    padding: 10px;
+}
+.box {
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 5%;
+}
+.intro, .description,
+.ingredients {
+    max-width:100%;
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 0.5em 0;
+}
+}   
+.dropbtn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ddbecf;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="homepage.html"><h1> Easy Desserts</h1></a>
+        </header>
+        <nav>
+            <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">Recipes       <i class="arrow down"></i></button>
+                  <div class="dropdown-content">
+                    <a href="cheesecake.html">Cheesecake</a>
+                    <a href="flan.html">Flan</a>
+                  </div>
+                </div>
+              </div> 
+        </nav>
+       <main>
+        <div class="intro">
+            <a href="../images/3rd_flan.jpg"></a>
+                    <img src="../images/3rd_flan.jpg" alt="flanimg" class="flan2">
+           <h1 class="titleflan"> Dominican Flan</h1>
+           <hr/>
+                
+                <p class="pintro">
+                    As a child, flan became one of my favorite desserts to eat and make, especially with my grandma. 
+                    This is my grandma’s recipe and her incredible talent of baking has blessed me with this recipe. 
+                    It’s one of the easiest desserts you will ever make, I’ve been making it since I was 8 years old! 
+                    If a child could do it, you can too! This dessert is irresistibly bouncy, rich, and packed with flavor in every bite. 
+                    You’d be crazy if you didn’t give it a try! 
+                    If you want to make this caramel, creamy, sweet delight, scroll down to see our quick and easy Flan recipe! 
+                </p>
+            </div>
+        
+            
+           
+            <div class="instructionbox">
+                <div class="prep">
+                    <h2>Dominican Flan</h2>
+                    <p>
+                        <div class="preptime">
+                            <div>Prep Time</div>
+                            <div>Cook Time</div>  
+                            <div>Yield </div>
+                        </div>
+                        <div class="time">
+                            <div>15 mins</div>
+                            <div>1 hr</div>
+                            <div>8 people</div>
+                        </div>
+                    </p>
+                </div>
+            <div>
+        <div class="box">
+            <div class="ingredients">
+                <h2 > Ingredients for 8 servings</h2>
+                   <ul>
+                        <li>1 cup white sugar</li>
+                        <li>5 eggs whites</li> 
+                        <li>3 eggs</li> 
+                        <li>1 (14 ounce) can sweetened condensed milk</li>
+                        <li>1 (12 fluid ounce) can evaporated milk</li> 
+                        <li>1 tablespoon vanilla extract</li>
+                   </ul>
+                   <a href="../images/creamcheese.avif"></a>
+            <img src="../images/creamcheese.avif" alt="2ndbatterimg" class="batter2">
+                </div>
+                   
+                </p> 
+                <div class="directions">
+                <h2>Directions</h2>  
+                
+                <ol>
+                    <li>
+                        <strong>Preheat the oven:</strong> 
+                        Preheat your oven to 350°F (175°C).
+                    </li>
+                    <li>
+                        <strong>Make the caramel:</strong> 
+                        In a medium saucepan, melt 1 cup of sugar over medium-low heat until it turns liquefied and golden. Carefully pour the hot syrup into a deep 9-inch round glass baking dish, tilting the dish to evenly coat the bottom. Set aside.
+                    </li>
+                    <li>
+                        <strong>Prepare the flan mixture:</strong> 
+                        Separate 5 egg whites and get 3 whole eggs. Add the eggs, sweetened condensed milk, evaporated milk, and vanilla extract into a blender. Turn the blender on and beat until the mixture is combined, but not for too long.
+                    </li>
+                    <li>
+                        <strong>Combine and bake:</strong> 
+                        Pour the mixture over the caramel in the baking dish. Place the dish in a deep roasting pan, then carefully pour hot water into the roasting pan until it reaches 1 inch up the sides of the flan dish.
+                    </li>
+                    <li>
+                        <strong>Bake:</strong> 
+                        Bake in the preheated oven for about 1 hour, checking after 55 minutes. The flan should be just set with a slight jiggle in the center, as it will continue to set while cooling.
+                    </li>
+                    <li>
+                        <strong>Cool and refrigerate:</strong> 
+                        Once done, remove from the oven and carefully transfer the baking dish to a wire rack. Let it cool to room temperature, then cover with plastic wrap to prevent a skin from forming. Refrigerate for at least 3 hours or up to 3 days.
+                    </li>
+                    <li>
+                        <strong>Serve:</strong> 
+                        To serve, run a knife around the edges of the dish. Carefully invert the flan onto a rimmed serving plate, allowing the caramel sauce to flow over it.
+                    </li>
+                    <li>
+                        <strong>Enjoy:</strong> 
+                        Enjoy your delicious flan!
+                    </li>
+                </ol>
+    
+                </div>       
+            </div>
+        </div>
+
+    </div>
+
+       
+       </main>
+       <footer>
+        <hr>
+            <h2> About Us</h2>
+            <div class="aboutus">
+                My name is Caribel Florentino and I've always loved baking. I'm a self taught baker and was taught by my grandma. This website is an outlet for me to share my favorite recipes with the world! Share it with your friends!  
+            </div>  
+         </footer>  
+    
+    </body>
+</html>

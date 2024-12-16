@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Cheesecake</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .titlecheesecake {
+            background-color: #f8f6f2;
+            text-align: left;
+        }
+        .intro {
+            border-radius: 1em;
+            border: #c0a4b3 solid;
+            padding: 2em;
+            margin: 50px auto;
+            display: block;
+            max-width: 70%;
+        }
+        .pintro {
+            padding: 70px 0;
+            text-align: center;
+        }
+        .cheesecake-img {
+            float: left;
+            padding: 15px;
+            max-height: 400px;
+            max-width: 400px;
+        }
+        .instructionbox {
+            margin-top: 10%;
+            text-align: center;
+            flex: 1;
+            order: 1;
+            background-color: #f9e5f0;
+            border-radius: .5em;
+            font-size: 90%;
+            margin: 50px auto;
+            max-width: 90%;
+        }
+        .prep {
+            padding-top: 5%;
+        }
+        .preptime {
+            color: rgb(85, 17, 51);
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+        .time {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .box{
+                flex-direction:row;
+                display:flex;
+                gap: 30px;
+                margin:30px
+            }
+        .batter2{
+            max-width:300px;
+                max-height: 300px;
+            }
+            .directions{
+                flex: 1; /* Make both descriptions take up equal space */
+    background-color: #f3d1e3;
+    border-radius: 1em;
+    border-right:solid #c0a4b3;
+    padding: 2em;
+    margin: 10px auto; /* Remove excess margins to keep layout clean */
+    font-size: 90%;
+    box-shadow: 5px 5px 10px #e3e3e3; /* Optional: Add a shadow for style */
+    box-sizing: border-box;
+    flex-direction:row-reverse;
+    text-align:left;
+            }
+            .ingredients{
+                flex: 1; /* Make both descriptions take up equal space */
+    background-color: #f3d1e3;
+    border-radius: 1em;
+    border-right:solid #c0a4b3;
+    padding: 2em;
+    margin: 10px auto; /* Remove excess margins to keep layout clean */
+    font-size: 90%;
+    box-shadow: 5px 5px 10px #e3e3e3; /* Optional: Add a shadow for style */
+    box-sizing: border-box;
+    flex-direction:row-reverse;
+    text-align:left;
+            }
+            @media only screen and (max-width: 600px) {
+    nav a {
+color: rgb(85, 17, 51);
+width: 100%;
+margin:1%;
+}
+    body {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    line-height: 1.5;
+}
+h1 {
+    font-size:40px;
+    padding: 10px;
+}
+.batter2{
+    max-width:200px;
+}
+nav {
+    gap:1%;
+    flex-direction: column;
+    padding: 10px;
+}
+footer {
+    flex-direction: column; /* Stack footer content vertically */
+    padding: 10px;
+}
+.box {
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 5%;
+}
+.intro, .description,
+.ingredients {
+    max-width:100%;
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 0.5em 0;
+}
+}  
+.dropbtn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ddbecf;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><h1>Easy Desserts</h1></a>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">Recipes       <i class="arrow down"></i></button>
+              <div class="dropdown-content">
+                <a href="cheesecake.html">Cheesecake</a>
+                    <a href="flan.html">Flan</a>
+              </div>
+            </div>
+          </div> 
+    </nav>
+    <main>
+        <div class="intro">
+            <a href="../images/2ndcheese.jpeg"></a>
+            <img src="../images/2ndcheese.jpeg" alt="cheesecakeimg" class="cheesecake-img">
+            <h1 class="titlecheesecake">Japanese Cheesecake</h1>
+            <hr/>
+            <p class="pintro">
+                After wanting to try a Japanese cheesecake for years, but having no way to buy one in my area, I decided I would make my own. 
+                There was no need to be daydreaming about how it would taste when I could make it myself, from scratch! 
+                This dessert will blow you away and might easily become one of the best you’ve ever tried. 
+                So, if you’re interested in how to make it, scroll down to see our quick and easy recipe for the Japanese cheesecake!
+            </p>
+        </div>
+    
+        <div class="instructionbox">
+            <div class="prep">
+                <h2>Japanese Cheesecake</h2>
+                <div class="preptime">
+                    <div>Prep Time</div>
+                    <div>Cook Time</div>
+                    <div>Yield</div>
+                </div>
+                <div class="time">
+                    <div>20 mins</div>
+                    <div>70 mins</div>
+                    <div>6-8 people</div>
+                </div>
+            </div>
+        <div class="box">
+            <div class="ingredients">
+                <h2>Ingredients for 6-8 servings</h2>
+                <ul>
+                    <li>1/2 cup cream cheese</li>
+                    <li>1/3 cup milk</li>
+                    <li>2 1/2 tablespoons unsalted butter</li>
+                    <li>1/4 cup all-purpose flour</li>
+                    <li>2 egg yolks</li>
+                    <li>2 1/2 egg whites</li>
+                    <li>3 1/4 tablespoons sugar</li>
+                </ul>
+                <a href="../images/2nd_batter.jpg"></a>
+                <img src="../images/2nd_batter.jpg" alt="2ndbatterimg" class="batter2">
+            </div>
+
+            <div class="directions">
+                <h2>Directions</h2>
+                <ol>
+                    <li><strong>Separate the eggs:</strong> Separate 2 egg yolks into a bowl and 2 1/2 egg whites into a mixer bowl.</li>
+                    <li><strong>Melt and mix the base ingredients:</strong> In a pot over low heat, combine the butter, cream cheese, and sugar. Stir until smooth.</li>
+                    <li><strong>Incorporate egg yolks:</strong> Remove from heat and mix the egg yolks into the batter until fully combined.</li>
+                    <li><strong>Add dry ingredients:</strong> Sift in the flour and mix until smooth.</li>
+                    <li><strong>Mix in milk:</strong> Slowly pour in the milk, stirring continuously.</li>
+                    <li><strong>Beat egg whites:</strong> Beat the egg whites in a mixer until stiff peaks form.</li>
+                    <li><strong>Preheat oven:</strong> Preheat the oven to 330°F and prepare a bain-marie.</li>
+                    <li><strong>Fold egg whites into batter:</strong> Gently fold one-third of the egg whites into the batter. Repeat until fully incorporated.</li>
+                    <li><strong>Prepare baking pans:</strong> Line the bottom of a pan with parchment paper and pour in the batter.</li>
+                    <li><strong>Bake:</strong> Place the pan in the bain-marie and bake at 330°F for 25 minutes. Reduce temperature to 250°F and bake for 45 minutes.</li>
+                    <li><strong>Cool:</strong> Let the cake cool in the oven for 10 minutes.</li>
+                    <li><strong>Invert and remove:</strong> Carefully flip the cake out of the pan and remove the parchment paper.</li>
+                    <li><strong>Serve:</strong> Serve warm and enjoy the bounciness. You can also chill the cake for a firmer texture.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>About Us</h2>
+        <div class="aboutus">
+            My name is Caribel Florentino and I've always loved baking. I'm a self taught baker and was taught by my grandma. This website is an outlet for me to share my favorite recipes with the world! Share it with your friends!  
+        </div>
+    </footer>
+</body>
+</html>

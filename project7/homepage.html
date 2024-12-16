@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homepage</title>
+        <style>
+            body{
+                font-family:"PT Serif", serif;
+                background-color: #f8f6f2;
+            }
+            h1{
+                padding: 2%;
+                margin:auto;
+                text-align:center;
+                border: 1% #b0aca4;
+                font-size:3em;
+                background-color: #f9e5f0;
+            }
+            nav{
+                background-color: #ddbecf;
+                padding:.2%;
+                margin-bottom:1%;
+                text-align:center;
+                font-weight:bold;
+                display: flex;
+                justify-content: space-around;
+
+            }
+            
+            a{color:rgb(85, 17, 51);
+            text-decoration:none;
+       }
+a:visited {color:rgb(85, 17, 51);}
+
+nav a {
+  color: rgb(85, 17, 51);
+  width: 100%;
+ margin:50px;
+}
+
+       
+nav a:hover{background-color: #f2abd1;}
+            img {max-width:100%; display: block;
+                width: 300px;
+                        margin-left: auto;
+                        margin-right: auto; }
+            
+
+            footer{
+                background-color: #e7ccdb;
+                font-family:'Times New Roman', serif;
+                display: flex;
+                padding: 40px;
+            }
+
+            .aboutfooter {
+                margin: 0; 
+                flex:auto;
+            }
+
+            .aboutus {
+                padding: 0;
+                text-align: right; 
+                flex: 1; 
+            }
+                
+            .intro {
+                border:#c0a4b3 solid 5px;
+    float: none; /* Prevent unintended alignment issues */
+    clear: both; /* Clear any floats from previous elements */
+    text-align: center;
+    max-width: 210px; /* Restrict the text box width */
+    width: 100%;
+    padding: 20px; /* Add space inside the border */
+    margin: 2px auto; /* Center horizontally and add spacing above/below */
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
+.recipesintro {
+    flex-direction:row-reverse;
+    display: flex;
+    justify-content: space-between; /* Create space between the two descriptions */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    margin: 20px auto; /* Center the flex container */
+    max-width: 90%; /* Restrict the width of the container */
+    text-align: center;
+    gap: 50px; /* Add spacing between the two columns */
+}
+
+.cheesedesc{
+    flex: 1; /* Make both descriptions take up equal space */
+    background-color: #f9e5f0;
+    border-radius: 1em;
+    border-right:solid #c0a4b3;
+    padding: 2em;
+    margin: 10px auto; /* Remove excess margins to keep layout clean */
+    font-size: 90%;
+    box-shadow: 5px 5px 10px #e3e3e3; /* Optional: Add a shadow for style */
+    box-sizing: border-box;
+}
+.flandesc {
+    flex: 1; /* Make both descriptions take up equal space */
+    background-color: #f9e5f0;
+    border-right:solid #c0a4b3;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 0; /* Remove excess margins to keep layout clean */
+    font-size: 90%;
+    box-shadow: 5px 5px 10px #e3e3e3; /* Optional: Add a shadow for style */
+    box-sizing: border-box;
+}
+
+.desc {
+    max-width: 90%; /* Keep the text from stretching too wide */
+    margin: 0 auto; /* Center the text inside the box */
+}
+
+            @media only screen and (max-width: 600px) {
+                nav a {
+  color: rgb(85, 17, 51);
+  width: 100%;
+ margin:1%;
+}
+                body {
+                font-size: 14px; /* Slightly smaller font size for mobile */
+                line-height: 1.5;
+            }
+            h1 {
+                padding: 10px;
+            }
+            nav {
+                gap:1%;
+                flex-direction: column;
+                padding: 10px;
+            }
+            footer {
+                flex-direction: column; /* Stack footer content vertically */
+                padding: 10px;
+            }
+            .recipesintro {
+                flex-direction: column; /* Stack items vertically */
+                margin-bottom: 5%;
+            }
+            .intro, .cheesedesc,
+            .flandesc {
+                max-width:100%;
+                flex: 1 1 100%; /* Full width on small screens */
+                margin: 0.5em 0;
+            }
+        }
+        </style>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <a href="homepage.html"><h1> Easy Desserts</h1></a>
+        </header>
+        <nav>
+            <div class="navbar">
+                <a href="cheesecake.html">Japanese Cheesecake</a> 
+                <a href="flan.html">Dominican Flan</a>
+              </div> 
+        </nav>
+       <main>
+        <div class="recipesintro">
+            <intro class="intro">
+                <h2> About these desserts!</h2>
+                <p>
+                    Have you been wondering what tasty and easy desserts you can make? Desserts that make your mouth water and taste like your grandma made it? If so, the dessert recipes on this website are all you need to impress your friends and your picky aunts! 
+                </p>
+            </intro>
+            <div class="cheesedesc">
+                <a href="../images/home_cheese.jpg"></a>
+                    <img src="../images/home_cheese.jpg" alt="cheesecakeimg" class="maincheese">
+                    
+                    <div>
+                 <h2> Japanese Cheesecake</h2>
+                <p class="desc">
+                    The first recipe is Japanese cheesecake—a soft, cloud-like treat that’s a dream for cheesecake lovers. With just six ingredients, this iconic Asian dessert is incredibly easy to make. Popularized by shops like Uncle Tetsu, it’s a must-try for its unique texture and flavor. Prep takes only 20 minutes, and it bakes in an hour—perfect for a quick yet impressive dessert. Give our simple Japanese cheesecake recipe a go! 
+                </p>
+            </div>
+            </div>
+            <div class="flandesc">
+                <a href="../images/home_flan.jpg"></a>
+                    <img src="../images/home_flan.jpg" alt="flanimg" class="mainflan">
+                    <h2> Dominican Flan</h2>
+                <p class="desc">
+                    The second recipe is flan—a beloved staple in any Dominican household. If you love creamy, caramel-flavored desserts, this flan is perfect for you! With just five ingredients and under 15 minutes of prep, it’s easy to whip up using pantry staples. Bouncy, creamy, and utterly irresistible, it’s the ultimate cozy dessert for impressing guests. Try our quick and simple flan recipe today!
+                </p>
+            </div>
+        </div>    
+       </main>
+       <footer>
+        <hr>
+            <h2 class="aboutfooter"> About Us</h2>
+            <div class="aboutus">
+                My name is Caribel Florentino and I've always loved baking. I'm a self taught baker and was taught by my grandma. This website is an outlet for me to share my favorite recipes with the world! Share it with your friends!  
+            </div>  
+         </footer>  
+    
+    </body>
+</html>
